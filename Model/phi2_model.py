@@ -15,7 +15,6 @@ def generate_answer(query, context):
         else:
             document_type = "Indian laws"
 
-        # Prepare the prompt with stricter answering rules
         prompt = f"""You are NYAAY, an AI Legal Advocate specializing in Indian laws. Based on the following legal context from the {document_type}, provide a clear and professional legal answer to the question.
 
 Context from {document_type}:
