@@ -12,7 +12,7 @@ model = SentenceTransformer('all-MiniLM-L6-v2')  # Or use any other embedding mo
 documents = []
 
 # FAISS index
-embedding_dimension = 384  # all-MiniLM-L6-v2 has 384 dimensions
+embedding_dimension = 384 
 faiss_index = None
 
 def initialize_index():
