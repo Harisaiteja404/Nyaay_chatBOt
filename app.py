@@ -72,5 +72,4 @@ def init():
         return jsonify({'error': 'Internal server error'}), 500
 
 if __name__ == '__main__':
-    # Consider using environment variables for host and port
     app.run(host='0.0.0.0', port=8080)
