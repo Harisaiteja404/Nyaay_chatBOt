@@ -51,7 +51,7 @@ def initialize_documents():
                 print(f"Failed to download document {i+1}")
                 continue
             
-            # Find the actual downloaded file (with original name)
+            # Find the actual downloaded file.
             downloaded_files = [f for f in os.listdir(DOCUMENTS_PATH) if f.endswith('.pdf')]
             pdf_file = next((f for f in downloaded_files if f != f'temp_{file_id}.pdf'), None)
             
